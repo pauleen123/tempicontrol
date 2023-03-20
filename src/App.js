@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const [temperatureValue, setTemperatureValue] = useState(100);
+  const [temperatureValue, setTemperatureValue] = useState(10);
   return (
     <div className="app-container">
       <div className="temperature-display-container">
@@ -10,8 +10,10 @@ const App = () => {
         </div>
       </div>
       <div className="button-container">
-            <button>+</button>
-            <button>-</button>
+            <button 
+             onClick={() => setTemperatureValue(temperatureValue + 1)}>+</button>
+            <button 
+            onClick={() => setTemperatureValue(temperatureValue - 1)}>-</button>
           </div>
       
     </div>
