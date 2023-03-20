@@ -6,7 +6,7 @@ const App = () => {
     <div className="app-container">
       <div className="temperature-display-container">
         <div className="temperature-display"> 
-         {temperatureValue}*C
+         {temperatureValue}°C
         </div>
       </div>
       <div className="button-container">
